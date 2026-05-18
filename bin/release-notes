@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -e
-# ROOT is the directory containing plugin.toml
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-echo "DEBUG: Plugin ROOT is $ROOT" >&2
-ls -a "$ROOT" >&2
+# Find the real path of the binary in case it is symlinked
+BIN_PATH="$(python3 -c "import os; print(os.path.realpath('$0'))")"
+ROOT="$(cd "$(dirname "$BIN_PATH")/.." && pwd)"
+
 cd "$ROOT"
 if [ ! -d "node_modules" ]; then
   bun install --silent
