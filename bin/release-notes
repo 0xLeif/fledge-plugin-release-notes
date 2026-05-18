@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
+# ROOT is the directory containing plugin.toml
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+echo "DEBUG: Plugin ROOT is $ROOT" >&2
+ls -a "$ROOT" >&2
 cd "$ROOT"
 if [ ! -d "node_modules" ]; then
   bun install --silent
