@@ -1,0 +1,32 @@
+[source]
+template = "fledge-plugin"
+fledge_version = "1.4.1"
+created = "2026-05-17"
+
+[variables]
+author = "0xLeif"
+command_name = "release-notes"
+date = "2026-05-17"
+description = "A fledge plugin"
+emoji = "🔌"
+github_org = "0xLeif"
+license = "MIT"
+needs_exec = "false"
+needs_store = "false"
+project_name = "fledge-plugin-release-notes"
+project_name_camel = "fledgePluginReleaseNotes"
+project_name_kebab = "fledge-plugin-release-notes"
+project_name_pascal = "FledgePluginReleaseNotes"
+project_name_snake = "fledge_plugin_release_notes"
+year = "2026"
+
+[files]
+".github/workflows/ci.yml" = "90ffbcf4f669a4bf3a3abd57d9d0e94242788b90db9977cd2e71dc55a8a1d628"
+".github/workflows/pages.yml" = "ee551643c79435cf219a32add9481e3d5b28030ddb526cd811873f4cfcec3420"
+".gitignore" = "69739a6b2550e6facc9c70253d7342b2981c1e39fc2c38713eb88d063f379db8"
+LICENSE = "2575ff28cb04763f17ce392823ce091f734e337369e3138a6b9b588c4816f2a1"
+"README.md" = "4601e6e9ef53ae3bc09c4542ddb1990fcfe85afe0cd7c7db65cc209abdba67e5"
+"bin/release-notes" = "ed22f8ab56dc65c556202681c440cbca8007dec10ef92654bc572479ad0ff572"
+"docs/index.html" = "89b8ba42cfd82733c37648a3263762ae31862480bf5cdc34a2fba5accdc8b1bf"
+"fledge.toml" = "4761456e8176ffcd51237d3ec5c6ef316a032a5bf526c2ebe331ac30b2688ca5"
+"plugin.toml" = "3b7377d01fe44213158bd41dfd3a55e88ed534e5bc02e23773a26793f98b2513"

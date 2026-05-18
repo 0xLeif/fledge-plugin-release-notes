@@ -1,0 +1,16 @@
+[plugin]
+name = "fledge-plugin-release-notes"
+version = "0.1.0"
+description = "A fledge plugin"
+author = "0xLeif"
+license = "MIT"
+
+[[commands]]
+name = "release-notes"
+description = "A fledge plugin"
+binary = "bin/release-notes"
+
+[capabilities]
+exec = true
+store = true
+metadata = true

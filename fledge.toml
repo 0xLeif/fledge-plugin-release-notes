@@ -1,0 +1,7 @@
+# fledge.toml — project task definitions
+# Docs: https://github.com/CorvidLabs/fledge#task-runner
+
+[tasks]
+# build = "make build"
+# test = "make test"
+# lint = "echo 'add your linter'
