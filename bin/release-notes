@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
-cd "$(dirname "$0")/.."
-bun run index.ts
+set -e
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$ROOT"
+if [ ! -d "node_modules" ]; then
+  bun install --silent
+fi
+bun run index.ts "$@"
